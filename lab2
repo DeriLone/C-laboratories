@@ -1,0 +1,21 @@
+using System;
+
+class MainClass {
+  public static void Main (string[] args) {
+    int nn = 0, nk = 0;
+    do{
+    Console.Write ("nk --> ");
+    nk = int.Parse(Console.ReadLine());
+    Console.Write ("nn (<nk) --> ");
+    nn = int.Parse(Console.ReadLine());
+    }while(nn>nk);
+
+    int ak = 0;
+    for(int k = nn; k <= nk; k++)
+    {
+      ak+=  (((-1) ^ k) * (k ^ 2) - 1) / ((k ^ 2) + 3);
+    }
+    Console.WriteLine($"ak = {ak}");
+    
+  }
+}
