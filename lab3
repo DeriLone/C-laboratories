@@ -1,0 +1,35 @@
+using System;
+
+class MainClass {
+  public static void Main (string[] args) {
+    int dotX = 0, dotY = 0;
+    Console.Write("enter your dot, x - > ");
+    dotX = int.Parse(Console.ReadLine());
+    Console.Write("y - > ");
+    dotY = int.Parse(Console.ReadLine());
+
+    int Lx = 0, Ly = 0;
+    Console.Write("enter dot of sq(left side), x - > ");
+    Lx = int.Parse(Console.ReadLine());
+    Console.Write("y - > ");
+    Ly = int.Parse(Console.ReadLine());
+
+    int Rx = 0, Ry = 0;
+    Console.Write("enter dot of sq(right side) , x - > ");
+    Rx = int.Parse(Console.ReadLine());
+    Console.Write("y - > ");
+    Ry = int.Parse(Console.ReadLine());
+
+    bool Ins = false;
+    if (dotX > Lx && dotY < Ly)
+    {
+      if(dotX < Rx && dotY > Ry)
+        {
+          Ins = true;
+        }
+    }
+
+    Console.Write(Ins);
+
+    }
+}
