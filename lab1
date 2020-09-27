@@ -1,0 +1,15 @@
+using System;
+
+class MainClass {
+  public static void Main (string[] args) {
+    int R1=0, R2=0, R3=0;
+    Console.Write ("R1 --> ");
+    R1 = int.Parse(Console.ReadLine());
+    Console.Write ("R2 --> ");
+    R2 = int.Parse(Console.ReadLine());
+    Console.Write ("R3 --> ");
+    R3 = int.Parse(Console.ReadLine());
+    int R = R1 + R2 + R3;
+    Console.WriteLine($"R = {R}");
+  }
+}
