@@ -1,0 +1,96 @@
+using System;
+
+class MainClass {
+  static void Main(string[] args)
+  {
+    Console.Write("n --> ");
+    int n, m;
+    n = int.Parse(Console.ReadLine());
+    Console.Write("m --> ");
+    m = int.Parse(Console.ReadLine());
+
+    int[,] mas = new int[n, m];
+    Random rnd = new Random();
+    for (int i = 0; i < n; i++)
+    {
+      for (int j = 0; j < m; j++)
+      {
+        mas[i, j] = rnd.Next(0, 9);
+        Console.Write(mas[i, j] + "\t");
+      }
+      Console.WriteLine();
+    }
+    Console.WriteLine();
+
+    int BiggestValue;
+    int SmallestValue;
+    int NumBigg = 0, NumSmall = 0;
+    int reChange;
+    for (int i = 0; i < n; i++)
+    {
+      BiggestValue = 0;
+      SmallestValue = 9;
+      for (int j = 0; j < m; j++)
+      {
+        if(mas[i, j] > BiggestValue)
+        {
+          BiggestValue = mas[i, j];
+          NumBigg = j;
+        }
+        if(mas[i, j] < SmallestValue)
+        {
+          SmallestValue = mas[i, j];
+          NumSmall = j;
+        }
+      }
+      reChange = mas[i, NumSmall];
+      mas[i, NumSmall] = mas[i, NumBigg];
+      mas[i, NumBigg] = reChange;
+    }
+
+    
+  for (int i = 0; i < n; i++)
+      {
+        for (int j = 0; j < m; j++)
+        {
+          Console.Write(mas[i, j] + "\t");
+        }
+      Console.WriteLine();
+      }
+  Console.WriteLine();
+
+
+
+  for (int j = 0; j < m; j++)
+    {
+      BiggestValue = 0;
+      SmallestValue = 9;
+      for (int i = 0; i < n; i++)
+      {
+        if(mas[i, j] > BiggestValue)
+        {
+          BiggestValue = mas[i, j];
+          NumBigg = i;
+        }
+        if(mas[i, j] < SmallestValue)
+        {
+          SmallestValue = mas[i, j];
+          NumSmall = i;
+        }
+      }
+      reChange = mas[NumSmall, j];
+      mas[NumSmall, j] = mas[NumBigg, j];
+      mas[NumBigg, j] = reChange;
+    }
+
+    for (int i = 0; i < n; i++)
+      {
+        for (int j = 0; j < m; j++)
+        {
+          Console.Write(mas[i, j] + "\t");
+        }
+      Console.WriteLine();
+      }
+    
+  }
+}
