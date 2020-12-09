@@ -1,0 +1,90 @@
+using System;
+
+namespace pr
+{
+    class Program
+    {
+
+        static void Reverse(char[] value1, char[] value2)
+        {
+            for (int i = value1.Length - 2; i > -1; i--)
+            {
+                Console.Write(value1[i]);
+            }
+            Console.Write(',');
+            for (int i = value2.Length - 2; i > -1; i--)
+            {
+                Console.Write(value2[i]);
+            }
+            Console.WriteLine();
+        }
+
+        static void Reverse(string value)
+        {
+            for (int i = value.Length - 1; i > -1; i--)
+            {
+                Console.Write(value[i]);
+            }
+            Console.WriteLine();
+        }
+
+        static void ReverseRecursion(char[] value, int i)
+        {
+            if (i > -1)
+            {
+                Console.Write(value[i]);
+                ReverseRecursion(value, i - 1);
+            }
+        }
+
+        static void ReverseRecursion(string value, int i)
+        {
+            if (i > -1)
+            {
+                Console.Write(value[i]);
+                ReverseRecursion(value, i - 1);
+            }
+        }
+
+        static void ReverseArray(ref char[] value)
+        {
+            char[] temp = new char[value.Length];
+            for (int i = 0; i < temp.Length; i++)
+            {
+                temp[i] = value[i];
+            }
+
+            for (int i = 0, j = temp.Length - 2; i < value.Length - 1; i++, j--)
+            {
+                value[i] = temp[j];
+            }
+
+            Console.WriteLine(value);
+        }
+
+        static void Main()
+        {
+            Console.OutputEncoding = System.Text.Encoding.Unicode; 
+            Console.InputEncoding = System.Text.Encoding.Unicode; 
+
+            Console.WriteLine("Enter a number or string --> ");
+            string data = Console.ReadLine();
+
+            Console.WriteLine("\nReverse:");
+            Reverse(data);
+            Console.WriteLine("\nReverse recursion:");
+            ReverseRecursion(data, data.Length - 1);
+
+            char[] TextArr = new char[data.Length + 1];
+            for (int i = 0; i < data.Length; i++)
+            {
+                TextArr[i] = data[i];
+            }
+
+            Console.WriteLine("\n\nReverse array:");
+            ReverseArray(ref TextArr);
+
+            Console.ReadKey();
+        }
+    }
+}
