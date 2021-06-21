@@ -1,0 +1,15 @@
+C:\Users\Никита\source\repos\Sem2Lab6\Sem2Lab6\bin\Debug\Sem2Lab6.exe.config
+C:\Users\Никита\source\repos\Sem2Lab6\Sem2Lab6\bin\Debug\Sem2Lab6.exe
+C:\Users\Никита\source\repos\Sem2Lab6\Sem2Lab6\bin\Debug\Sem2Lab6.pdb
+C:\Users\Никита\source\repos\Sem2Lab6\Sem2Lab6\obj\Debug\Sem2Lab6.csprojAssemblyReference.cache
+C:\Users\Никита\source\repos\Sem2Lab6\Sem2Lab6\obj\Debug\MainWindow.g.cs
+C:\Users\Никита\source\repos\Sem2Lab6\Sem2Lab6\obj\Debug\App.g.cs
+C:\Users\Никита\source\repos\Sem2Lab6\Sem2Lab6\obj\Debug\Sem2Lab6_MarkupCompile.cache
+C:\Users\Никита\source\repos\Sem2Lab6\Sem2Lab6\obj\Debug\Sem2Lab6_MarkupCompile.lref
+C:\Users\Никита\source\repos\Sem2Lab6\Sem2Lab6\obj\Debug\MainWindow.baml
+C:\Users\Никита\source\repos\Sem2Lab6\Sem2Lab6\obj\Debug\Sem2Lab6.g.resources
+C:\Users\Никита\source\repos\Sem2Lab6\Sem2Lab6\obj\Debug\Sem2Lab6.Properties.Resources.resources
+C:\Users\Никита\source\repos\Sem2Lab6\Sem2Lab6\obj\Debug\Sem2Lab6.csproj.GenerateResource.cache
+C:\Users\Никита\source\repos\Sem2Lab6\Sem2Lab6\obj\Debug\Sem2Lab6.csproj.CoreCompileInputs.cache
+C:\Users\Никита\source\repos\Sem2Lab6\Sem2Lab6\obj\Debug\Sem2Lab6.exe
+C:\Users\Никита\source\repos\Sem2Lab6\Sem2Lab6\obj\Debug\Sem2Lab6.pdb
